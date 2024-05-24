@@ -1,7 +1,7 @@
 @extends('admin.main')
-
+@section('content')
 <div class="pagetitle">
-    @section('content')
+
         
     <h1>Student</h1>
     <nav>

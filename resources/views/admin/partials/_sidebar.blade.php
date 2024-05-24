@@ -20,4 +20,5 @@
       </li><!-- End Dashboard Nav -->
     </ul>
 
-  </aside><!-- End Sidebar-->
+  </aside>
+  <!-- End Sidebar-->
