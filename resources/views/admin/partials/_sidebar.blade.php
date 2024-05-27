@@ -18,6 +18,12 @@
           <span>Student</span>
         </a>
       </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link @if($currentRoute != 'admin/courses') collapsed @endif" href="/admin/courses">
+          <i class="bi bi-grid"></i>
+          <span>Courses</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
     </ul>
 
   </aside>
