@@ -31,3 +31,18 @@ Route::get('admin/student', [StudentController::class, 'index']);
 
 // Route untuk menampilkan couses
 Route::get('admin/courses', [CoursesController::class, 'index']);
+
+// Route untuk menampilkan form tambah student
+Route::get('admin/student/create', [StudentController::class, 'create']);
+
+// Route untuk mengirim data form tambah student
+Route::post('admin/student/create', [StudentController::class, 'store']);
+
+// Route untuk menampilkan edit student
+Route::get('admin/student/edit/{id}', [StudentController::class, 'edit']);
+
+// Route untuk menyimpan hasil update student
+Route::put('admin/student/update/{id}', [StudentController::class, 'update']);
+
+// Route untuk menghapus student
+Route::delete('admin/student/delete/{id}', [StudentController::class, 'destroy']);
