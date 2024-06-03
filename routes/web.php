@@ -46,3 +46,18 @@ Route::put('admin/student/update/{id}', [StudentController::class, 'update']);
 
 // Route untuk menghapus student
 Route::delete('admin/student/delete/{id}', [StudentController::class, 'destroy']);
+
+// Route untuk menampilkan form tambah courses
+Route::get('admin/courses/create', [CoursesController::class, 'create']);
+
+// Route untuk mengirim data course baru
+Route::post('admin/courses/store', [CoursesController::class, 'store']);
+
+// Route untuk menampilkan halaman edit data course
+Route::get('admin/courses/edit/{id}', [CoursesController::class, 'edit']);
+
+// Route untuk menyimpan hasil update data courses
+Route::put('admin/courses/update/{id}', [CoursesController::class, 'update']);
+
+// Route untuk menghapus data courses
+Route::delete('admin/courses/delete/{id}', [CoursesController::class, 'destroy']);
