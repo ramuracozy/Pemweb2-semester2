@@ -12,4 +12,10 @@ class Courses extends Model
     protected $table = 'courses';
 
     protected $fillable = ['name', 'category', 'desc'];
+
+    // mendefinisikan relasi ke model student 1:M
+    public function students()
+    {
+        return $this->hasMany(Student::class);
+    }
 }
