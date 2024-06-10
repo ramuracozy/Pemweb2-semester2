@@ -43,6 +43,16 @@
                         <input type="text" name="class" id="class" class="form-control" value="{{ $student->class ?? '' }}">
                     </div>
 
+                    <div class="mb-2">
+                        <label for="course_id" class="form-label">Course</label>
+                        <select name="course_id" id="course_id" class="form-select">
+                            <option value="">Choose Course</option>
+                            @foreach ($courses as $courses)
+                                <option value="{{ $courses->id }}">{{ $courses->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
                     <div class="mb-4">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
