@@ -34,7 +34,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     // Route untuk menampilkan student
-    Route::get('admin/student', [StudentController::class, 'index']);
+    Route::get('admin/student', [StudentController::class, 'index'])->middleware('admin');
 
     // Route untuk menampilkan couses
     Route::get('admin/courses', [CoursesController::class, 'index']);
